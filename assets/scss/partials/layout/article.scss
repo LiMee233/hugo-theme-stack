@@ -286,9 +286,11 @@
     h4,
     h5,
     h6 {
-        margin-left: calc((var(--card-padding)) * -1);
+        margin: (var(--card-padding)) 0;
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
-        border-left: var(--heading-border-size) solid var(--accent-color);
+        border-left: var(--heading-border-size);
+        border-left-style: solid;
+        border-radius: var(--heading-border-radius);
     }
 
     figure {

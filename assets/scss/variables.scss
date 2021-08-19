@@ -35,7 +35,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --tag-border-radius: 4px;
 
     --section-separation: 40px;
-
+    
     --scrollbar-thumb: hsl(0, 0%, 85%);
     --scrollbar-track: var(--body-background);
 
@@ -125,7 +125,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --blockquote-border-radius: 5px;
     --blockquote-padding: 15px;
     
-    --heading-border-size: 4px;
+    --heading-border-size: 5px;
+    --heading-border-radius: 5px;
 
     --link-background-color: 189, 195, 199;
     --link-background-opacity: 0.5;
