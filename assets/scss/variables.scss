@@ -119,9 +119,11 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Article content style
 */
 :root {
-    --blockquote-border-size: 4px;
-    --blockquote-background-color: rgb(248 248 248);
-
+    --blockquote-border-size: 5px;
+    --blockquote-background-color: #FEEDF3;
+    --blockquote-border-color: #FAB1CE;
+    --blockquote-border-radius: 5px;
+    
     --heading-border-size: 4px;
 
     --link-background-color: 189, 195, 199;
