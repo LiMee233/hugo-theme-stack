@@ -442,3 +442,64 @@
         transition: opacity 0.3s ease;
     }
 }
+
+// Add tag feature
+.warning {
+    background-color: var(--tag-warning-background);
+    border-color: var(--tag-warning-border);
+    padding: var(--tag-padding);
+    border-left-width: var(--tag-border-left-width);
+    border-left-style: solid;
+    margin: 1em 0;
+    border-radius: var(--tag-border-radius);
+    }
+
+.primary {
+    background-color: var(--tag-primary-background);
+    border-color: var(--tag-primary-border);
+    padding: var(--tag-padding);
+    border-left-width: var(--tag-border-left-width);
+    border-left-style: solid;
+    margin: 1em 0;
+    border-radius: var(--tag-border-radius);
+    }
+
+.secondary {
+    background-color: var(--tag-secondary-background);
+    border-color: var(--tag-secondary-border);
+    padding: var(--tag-padding);
+    border-left-width: var(--tag-border-left-width);
+    border-left-style: solid;
+    margin: 1em 0;
+    border-radius: var(--tag-border-radius);
+    }
+
+.success {
+    background-color: var(--tag-success-background);
+    border-color: var(--tag-success-border);
+    padding: var(--tag-padding);
+    border-left-width: var(--tag-border-left-width);
+    border-left-style: solid;
+    margin: 1em 0;
+    border-radius: var(--tag-border-radius);
+    }
+
+.danger {
+    background-color: var(--tag-danger-background);
+    border-color: var(--tag-danger-border);
+    padding: var(--tag-padding);
+    border-left-width: var(--tag-border-left-width);
+    border-left-style: solid;
+    margin: 1em 0;
+    border-radius: var(--tag-border-radius);
+    }
+
+.info {
+    background-color: var(--tag-info-background);
+    border-color: var(--tag-info-border);
+    padding: var(--tag-padding);
+    border-left-width: var(--tag-border-left-width);
+    border-left-style: solid;
+    margin: 1em 0;
+    border-radius: var(--tag-border-radius);
+    }

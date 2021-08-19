@@ -161,3 +161,31 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 0px 1px rgba(0, 0, 0, 0.04);
 }
+
+/*
+*   For tag feature
+*/
+:root {
+    --tag-border-radius: 5px;
+    --tag-padding: 15px;
+    --tag-border-left-width: 5px;
+    
+    --tag-warning-background: rgba(255,223,79,0.2);
+    --tag-warning-border: rgba(255,223,79,0.8);
+    
+    --tag-primary-background: rgba(147,79,255,0.2);
+    --tag-primary-border: rgba(147,79,255,0.8);
+    
+    --tag-secondary-background: rgba(79,79,79,0.2);
+    --tag-secondary-border: rgba(79,79,79,0.8);
+    
+    --tag-success-background: rgba(79,255,117,0.2);
+    --tag-success-border: rgba(79,255,117,0.8);
+    
+    --tag-danger-background: rgba(255,79,79,0.2);
+    --tag-danger-border: rgba(255,79,79,0.8);
+    
+    --tag-info-background: rgba(79,173,255,0.2);
+    --tag-info-border: rgba(79,173,255,0.8);
+
+}
