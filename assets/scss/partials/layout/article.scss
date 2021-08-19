@@ -92,7 +92,7 @@
     .back-home {
         background: var(--card-background);
         border-radius: var(--tag-border-radius);
-        color: var(--card-text-color-tertiary);
+        color: var(--accent-color);
         margin-right: 30px;
         display: inline-flex;
         align-items: center;
@@ -155,7 +155,7 @@
             a {
                 background: transparent;
                 box-shadow: none;
-                border: 1px solid var(--body-text-color);
+                border: 1px solid var(--accent-color);
                 width: 100%;
                 margin-right: 0;
 
