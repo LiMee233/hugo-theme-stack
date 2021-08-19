@@ -303,9 +303,11 @@
     blockquote {
         position: relative;
         border-radius: var(--blockquote-border-radius);
-        margin: 1.5em 0;
-        border-left: var(--blockquote-border-size) solid var(--blockquote-border-color);
-        padding: 5px calc(var(--card-padding) - var(--blockquote-border-size));
+        margin: 1em 0;
+        border-color: var(--blockquote-border-color);
+        border-left-width: var(--blockquote-border-size);
+        border-left-style: solid;
+        padding: var(--blockquote-padding);
         background-color: var(--blockquote-background-color);
     }
 
