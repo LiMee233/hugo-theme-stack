@@ -135,6 +135,10 @@
         align-items: start;
         flex-direction: column;
 
+        @include respond(md) {
+            flex-direction: row;
+        }
+        
         @include respond(xl) {
             flex-direction: row;
         }
@@ -143,6 +147,10 @@
     .main {
         padding-top: 0;
 
+        @include respond(md) {
+            padding-top: var(--main-top-padding);
+        }
+        
         @include respond(xl) {
             padding-top: var(--main-top-padding);
         }
