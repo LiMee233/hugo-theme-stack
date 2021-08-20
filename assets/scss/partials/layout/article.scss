@@ -88,45 +88,10 @@
     @include respond(md) {
         display: none;
     }
-
-    .back-home {
-        background: var(--card-background);
-        border-radius: var(--tag-border-radius);
-        color: var(--accent-color);
-        margin-right: 30px;
-        display: inline-flex;
-        align-items: center;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        padding: 10px 20px 10px 15px;
-
-        transition: box-shadow 0.3s ease;
-
-        box-shadow: var(--shadow-l1);
-
-        &:hover {
-            box-shadow: var(--shadow-l2);
-        }
-
-        svg {
-            margin-right: 5px;
-            width: 20px;
-            height: 20px;
-        }
-
-        span {
-            font-weight: 500;
-            white-space: nowrap;
-        }
-    }
 }
 
 .article-page.has-toc {
     scroll-behavior: smooth;
-
-    .left-sidebar {
-        display: none;
-    }
 
     .right-sidebar {
         width: 100%;
