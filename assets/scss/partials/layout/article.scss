@@ -263,6 +263,7 @@
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
         border-left: var(--heading-border-size);
         border-left-style: solid;
+        border-color: var(--accent-color);
         border-radius: var(--heading-border-radius);
     }
 
