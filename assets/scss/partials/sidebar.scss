@@ -8,7 +8,7 @@
 
 .left-sidebar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-shrink: 0;
     align-self: stretch;
     padding: 5px 20px 15px 5px;
@@ -27,6 +27,7 @@
         padding: 30px 20px 15px 30px;
         --sidebar-avatar-size: 120px;
         --sidebar-element-separation: 20px;
+        flex-direction: column;
     }
 
     @include respond(2xl) {
