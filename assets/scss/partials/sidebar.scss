@@ -11,19 +11,22 @@
     flex-direction: column;
     flex-shrink: 0;
     align-self: stretch;
-
+    padding: 5px 20px 15px 5px;
     width: 100%;
-    padding: 30px 20px 15px 30px;
+
     max-width: none;
 
-    --sidebar-avatar-size: 120px;
-    --sidebar-element-separation: 20px;
+    --sidebar-avatar-size: 60px;
+    --sidebar-element-separation: 0px;
 
     @include respond(md) {
         width: auto;
         padding-top: var(--main-top-padding);
         padding-bottom: var(--main-top-padding);
         max-height: 100vh;
+        padding: 30px 20px 15px 30px;
+        --sidebar-avatar-size: 120px;
+        --sidebar-element-separation: 20px;
     }
 
     @include respond(2xl) {
@@ -52,11 +55,13 @@
 .site-info {
     z-index: 1;
     transition: box-shadow 0.5s ease;
+    display: flex;
 
     padding: 15px;
 
     @include respond(md) {
         padding: 0;
+        display: block;
     }
 
     .site-avatar {
@@ -86,6 +91,11 @@
             font-size: 20px;
             background-color: var(--card-background);
             box-shadow: var(--shadow-l2);
+            
+            display: none;
+            @include respond(md) {
+                display: block;
+            }
 
             @include respond(2xl) {
                 width: 50px;
@@ -97,8 +107,13 @@
 
     .site-name {
         color: var(--accent-color);
-        margin: 0;
+        margin: 5px 0px 0px 10px;
         font-size: 1.8rem;
+        font-weight: bold;
+
+        @include respond(md) {
+            margin: 0;
+        }
 
         @include respond(2xl) {
             font-size: 2rem;
@@ -108,12 +123,20 @@
     .site-description {
         color: var(--body-text-color);
         font-weight: normal;
-        margin: 10px 0;
+        margin: 10px 0px 0px 10px;
         font-size: 1.6rem;
+
+        @include respond(md) {
+            margin: 10px 0px;
+        }
 
         @include respond(2xl) {
             font-size: 1.8rem;
         }
+    }
+    
+    .site-text {
+        margin: 20px;
     }
 }
 
