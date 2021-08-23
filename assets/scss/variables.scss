@@ -17,6 +17,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Global style
 */
 :root {
+    --main-top-padding: 5px;
     @include respond(md) {
         --main-top-padding: 35px;
     }
