@@ -21,10 +21,8 @@
 
     @include respond(md) {
         width: auto;
-        padding-top: var(--main-top-padding);
-        padding-bottom: var(--main-top-padding);
         max-height: 100vh;
-        padding: 30px 20px 15px 30px;
+        padding: var(--main-top-padding) 20px var(--main-top-padding) 30px;
         --sidebar-avatar-size: 120px;
         --sidebar-element-separation: 20px;
         flex-direction: column;
