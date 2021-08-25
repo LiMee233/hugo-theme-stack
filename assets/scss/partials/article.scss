@@ -121,7 +121,7 @@
 .article-tags {
     a {
         color: var(--accent-color-text);
-        background-color: var(--accent-color);
+        background-color: var(--accent-color2);
         padding: 8px 16px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
@@ -132,7 +132,7 @@
 
         &:hover {
             color: var(--accent-color-text);
-            background-color: var(--accent-color-darker);
+            background-color: var(--accent-color2-darker);
         }
     }
 }
