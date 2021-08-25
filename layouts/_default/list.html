@@ -2,6 +2,10 @@
     <h3 class="section-title">
         {{ if eq .Parent (.GetPage "/") }}
             {{ T "list.section" }}
+        {{ else if eq .Parent (.GetPage "/categories") }}
+            {{ T "categories.title" }}
+        {{ else if eq .Parent (.GetPage "/tags") }}
+            {{ T "tags.title" }}
         {{ else }}
             {{ .Parent.Title }}
         {{ end }}

@@ -68,3 +68,12 @@ footer:
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+
+archives:
+    title: archives
+
+categories:
+    title: categories
+
+tags:
+    title: tags

@@ -4,6 +4,9 @@ toggleMenu:
 darkMode:
     other: 暗色模式
 
+list:
+    page: "{{ .Count }} 篇文章"
+
 article:
     back:
         other: 返回
@@ -47,3 +50,12 @@ search:
 
     resultTitle:
         other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
+archives:
+    title: 分类
+
+categories:
+    title: 分类
+
+tags:
+    title: 标签
