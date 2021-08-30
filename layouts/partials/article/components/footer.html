@@ -4,11 +4,11 @@
     {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
     <section class="article-copyright">
         {{ partial "helper/icon" "copyright" }}
-        <span style='margin-right:10px;'>{{ T "license.title-before" }}</span>
-        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
-        {{ if ( not (eq (T "license.title-after") "")) }}
-            <span style='margin-left:10px;'>{{ T "license.title-after" }}</span> 
-        {{ end }}
+        <span style='margin-right:10px;'>
+            {{ T "license.title-before" }}
+            {{ default .Site.Params.article.license.default .Params.license | markdownify }}
+            {{ T "license.title-after" }}
+        </span>
     </section>
     {{ end }}
 
