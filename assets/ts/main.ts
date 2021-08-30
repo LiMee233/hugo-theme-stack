@@ -42,8 +42,6 @@ let Stack = {
                             articleDetails: HTMLDivElement = articles.querySelector('.article-details');
 
                         const colors = await getColor(key, hash, imageURL);
-
-                        articleDetails.style.background = `rgba(0,0,0,0.25)`;
                     })
                 })
             });
