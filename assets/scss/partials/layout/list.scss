@@ -36,6 +36,7 @@
         img {
             width: 60px;
             height: 60px;
+            border-radius: var(--card-border-radius);
         }
     }
 
@@ -53,13 +54,22 @@
     overflow-x: auto;
 
     .article-list--tile {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+
+        @include respond(md) {
+            grid-template-columns: auto auto;
+        }
+
+        @include respond(2xl) {
+            grid-template-columns: auto auto auto;
+        }
+
         padding-bottom: 15px;
 
         article {
-            margin-right: 20px;
-            flex-shrink: 0;
-
             .article-details {
                 padding: 20px;
             }
