@@ -204,12 +204,13 @@
 
 /* Tile style article list */
 .article-list--tile {
-    --image-size: 50px;
     article {
+        --tile-height: 100px;
+
         border-radius: var(--card-border-radius);
         overflow: hidden;
         position: relative;
-        height: 120px;
+        height: var(--tile-height);
         box-shadow: var(--shadow-l1);
         transition: box-shadow 0.3s ease;
         background-color: var(--card-background);
@@ -220,17 +221,21 @@
 
         .article-image {
             position: absolute;
-            width: 30%;
-            height: 30%;
-            top: 15px;
-            left: 15px;
 
             img {
-                width: var(--image-size);
-                height: var(--image-size);
+                height: var(--tile-height);
+                width: var(--tile-height);
                 object-fit: cover;
-                border-radius: var(--card-border-radius);
             }
+        }
+
+        .abc {
+            position: absolute;
+            width: var(--tile-height);
+            height: var(--tile-height);
+            left: 0px;
+            top: 0px;
+            background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1));
         }
 
         .article-details {
@@ -252,9 +257,9 @@
         .article-title {
             margin: 0;
             font-size: 2.1rem;
-            font-weight: 500;
+            font-weight: 800;
             position: absolute;
-            left: calc(25px + var(--image-size));
+            left: calc(var(--tile-height) + 15px);
             top: 15px;
             right:15px;
             color: var(--accent-color);
@@ -269,13 +274,13 @@
         .article-description {
             font-size: 1.4rem;
             position: absolute;
-            left: 15px;
+            left: calc(var(--tile-height) + 15px);
             right: 15px;
-            top: calc(var(--image-size) + 15px + 10px);
+            top: calc(15px + 2.1rem + 15px);
             color: var(--card-text-color-main);
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 4;
+            -webkit-line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
         }
