@@ -168,7 +168,7 @@
     li {
         position: relative;
         vertical-align: middle;
-        padding: 10px 30px;
+        padding: 0px 30px;
 
         &:not(:last-of-type) {
             margin-bottom: 15px;
@@ -180,7 +180,7 @@
 
         @include respond(md) {
             width: 100%;
-            padding: 10px 0;
+            padding: 0;
         }
 
         svg {
@@ -192,10 +192,14 @@
         }
 
         a {
-            height: 100%;
-            display: inline-flex;
-            align-items: center;
+            height: 40px;
+            line-height: 40px;
+            display: block;
             color: var(--accent-color);
+
+            svg {
+                vertical-align: -10%;
+            }
         }
 
         span {
