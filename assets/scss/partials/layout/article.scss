@@ -193,13 +193,13 @@
         }
 
         li {
-            margin: 15px 20px;
+            margin: 15px 10px 15px 20px;
             padding: 5px;
 
             & > ol,
             & > ul {
                 margin-top: 10px;
-                padding-left: 10px;
+                margin-left: -5px;
                 margin-bottom: -5px;
 
                 & > li:last-child {
