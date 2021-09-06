@@ -206,9 +206,12 @@
             flex: 1;
         }
 
+        :hover {
+            color: var(--accent-color-darker)
+        }
+
         &.current {
             a {
-                color: var(--accent-color);
                 font-weight: bold;
             }
         }
