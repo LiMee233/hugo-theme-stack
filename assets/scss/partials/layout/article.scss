@@ -311,6 +311,13 @@
         justify-content: center;
         margin: 1.5em 0;
 
+        img {
+            border-radius: var(--image-border-radius);
+            border-color: var(--accent-color);
+            border-width: 1px;
+            border-style: solid;
+        }
+
         figure {
             margin: 0;
 
