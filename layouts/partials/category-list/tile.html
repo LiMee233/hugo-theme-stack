@@ -2,7 +2,7 @@
 <a href="{{ .context.RelPermalink }}">
     <article class="{{ if $image.exists }}has-image{{ end }}">        
         {{ if $image.exists }}
-            <div class="article-image">
+            <div class="category-image">
                 {{ if $image.resource }}
                     {{- $imageRaw := $image.resource | resources.Fingerprint "md5" -}}
                     {{- $Permalink := $imageRaw.RelPermalink -}}
@@ -28,11 +28,11 @@
             </div>
         {{ end }}
 
-        <div class="article-details">
-            <h2 class="article-title">
+        <div class="category-details">
+            <h2 class="category-title">
                 {{- .context.Title -}}
             </h2>
-            <span class="article-description">
+            <span class="category-description">
                 {{- .context.Description -}}
             </span>
         </div>

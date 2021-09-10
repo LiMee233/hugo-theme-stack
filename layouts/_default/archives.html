@@ -5,9 +5,9 @@
     {{ if $terms }}
     <h2 class="section-title">{{ T "archives.title" }}</h2>
     <div class="subsection-list">
-        <div class="article-list--tile">
+        <div class="category-list--tile">
             {{ range $terms }}
-                {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "taxonomy") }}
+                {{ partial "category-list/tile" (dict "context" . "size" "250x150" "Type" "taxonomy") }}
             {{ end }}
         </div>
     </div>
