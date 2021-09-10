@@ -1,7 +1,6 @@
 {{ $image := partialCached "helper/image" (dict "Context" .context "Type" .Type) .context.RelPermalink .Type }}
-<article class="{{ if $image.exists }}has-image{{ end }}">
-    <a href="{{ .context.RelPermalink }}">
-        
+<a href="{{ .context.RelPermalink }}">
+    <article class="{{ if $image.exists }}has-image{{ end }}">        
         {{ if $image.exists }}
             <div class="article-image">
                 {{ if $image.resource }}
@@ -38,5 +37,5 @@
             </span>
         </div>
         <div class="gradient-mask"/>
-    </a>
-</article>
+    </article>
+</a>
