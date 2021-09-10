@@ -30,10 +30,6 @@
                 @include respond(md) {
                     height: 200px;
                 }
-
-                @include respond(xl) {
-                    height: 250px;
-                }
             }
         }
 
