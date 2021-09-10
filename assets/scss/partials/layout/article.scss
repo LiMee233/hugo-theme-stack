@@ -473,3 +473,8 @@
     background-color: var(--tag-info-background);
     border-color: var(--tag-info-border);
     }
+
+// set word-break for code.
+code {
+    word-break: break-all;
+}
