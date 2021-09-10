@@ -24,7 +24,14 @@
     {{ $pag := .Paginate ($notHidden) }}
 
     <!-- {TAXONOMY_TYPE}: {TAXONOMY_TERM} -->
-    {{ $title = slice (title .Data.Singular) ": " $title }}
+    {{ $type := "" }}
+    {{ if eq (title .Data.Singular) "Category" }}
+        {{ $type = T "categories.title" }}
+    {{ else if eq (title .Data.Singular) "Tag" }}
+        {{ $type = T "tags.title" }}
+    {{ end  }}
+
+    {{ $title = slice $type ": " $title }}
 
     {{ if .Paginator.HasPrev }}
         <!-- Add page number-->
