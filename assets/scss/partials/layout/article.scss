@@ -258,12 +258,17 @@
     h4,
     h5,
     h6 {
-        margin: (var(--card-padding)) 0;
-        padding-left: calc(var(--card-padding) - var(--heading-border-size));
-        border-left: var(--heading-border-size);
-        border-left-style: solid;
-        border-color: var(--accent-color);
-        border-radius: var(--heading-border-radius);
+        width: fit-content;
+
+        &:after {
+            content: "";
+            display: block;
+            width: calc(100% + 50px);
+            margin: 0.2em 0px 0px 0px;
+            height: 0.1em;
+            background-color: var(--accent-color);
+            opacity: 0.8;
+        }
     }
 
     figure {
