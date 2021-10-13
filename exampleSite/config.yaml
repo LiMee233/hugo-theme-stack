@@ -43,6 +43,8 @@ params:
         avatar:
             enabled: true
             local: true
+
+            # Place avater image in "Blog root directory\asstes\img\"
             src: img/avatar.png
 
     article:
