@@ -28,7 +28,7 @@
         }
         @include respond(xl) {
             max-width: 1680px;
-            --right-sidebar-width: 23%;
+            --right-sidebar-width: 350px;
         }
     }
 
