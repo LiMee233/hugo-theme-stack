@@ -136,8 +136,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --link-background-color: 248, 139, 194;
     --link-background-opacity: 0.5;
 
-    --pre-background-color: #272822;
+    --pre-background-color: rgba(39, 40, 34, 0.8);
     --pre-text-color: #f8f8f2;
+    --pre-border-radius: 5px;
 
     --code-background-color: rgba(0, 0, 0, 0.12);
     --code-text-color: #808080;

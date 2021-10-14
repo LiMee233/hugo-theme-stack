@@ -340,12 +340,22 @@
         line-height: 1.428571429;
         word-break: break-all;
         padding: var(--card-padding);
+        border-radius: var(--pre-border-radius);
 
         code {
             color: unset;
             border: none;
             background: none;
             padding: 0;
+        }
+
+        &::before
+        {
+            content: "CODE";
+            display: block;
+            margin: -0.5em 0 0.5em 0;
+            font-weight: bold;
+            letter-spacing: 0.2em;
         }
     }
 
@@ -396,7 +406,6 @@
 
     /// Negative margins
     figure,
-    pre,
     .video-wrapper,
     .s_video_simple {
         margin-left: calc((var(--card-padding)) * -1);
