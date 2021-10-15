@@ -414,28 +414,19 @@
 
     .highlight {
         position: relative;
-
-        &:hover {
-            .copyCodeButton {
-                opacity: 1;
-            }
-        }
     }
 
     .copyCodeButton {
         position: absolute;
-        top: calc(var(--card-padding));
-        right: 0;
+        top: 16px;
+        right: 15px;
         background: var(--card-background);
         border: none;
-        box-shadow: var(--shadow-l2);
         border-radius: var(--tag-border-radius);
         padding: 8px 16px;
         color: var(--card-text-color-main);
         cursor: pointer;
         font-size: 14px;
-        opacity: 0;
-        transition: opacity 0.3s ease;
     }
 }
 
