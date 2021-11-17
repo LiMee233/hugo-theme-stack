@@ -224,6 +224,14 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    margin-block-start: 5px;
+    margin-left: 1em;
+
+    @include respond(md)
+    {
+        margin-block-start: 0.5em;
+        margin-left: 0px;
+    }
 
     svg {
         width: 24px;
