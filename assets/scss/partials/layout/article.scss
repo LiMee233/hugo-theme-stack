@@ -258,15 +258,18 @@
     h5,
     h6 {
         width: fit-content;
+        &:before {
+            content: "『";
+            display: inline;
+            padding-right: 0.3em;
+            color: var(--accent-color);
+        }
 
         &:after {
-            content: "";
-            display: block;
-            width: calc(100% + 2em);
-            margin: 0.2em 0px 0px 0px;
-            height: 0.1em;
-            background-color: var(--accent-color);
-            opacity: 0.8;
+            content: "』";
+            display: inline;
+            padding-left: 0.3em;
+            color: var(--accent-color);
         }
     }
 
