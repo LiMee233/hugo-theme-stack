@@ -33,6 +33,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --accent-color-text: #fff;
     --body-text-color: #bababa;
 
+    --primary-text-color: #5C5980;
+    --primary-text-color-darker: #494766;
+
     --tag-border-radius: 4px;
 
     --image-border-radius: 5px;
@@ -53,6 +56,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
+
+        --primary-text-color: #DCD9FF;
+        --primary-text-color-darker: #BBB8E6;
 
         --scrollbar-thumb: #323235;
         --scrollbar-track: var(--body-background);

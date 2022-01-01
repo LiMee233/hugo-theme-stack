@@ -106,7 +106,7 @@
     }
 
     .site-name {
-        color: var(--accent-color);
+        color: var(--primary-text-color);
         margin: 5px 0px 0px 10px;
         font-size: 1.8rem;
         font-weight: bold;
@@ -148,7 +148,7 @@
 
 [data-scheme="dark"] {
     #dark-mode-toggle {
-        color: var(--accent-color);
+        color: var(--primary-text-color);
         font-weight: 700;
 
         .icon-tabler-toggle-left {
@@ -163,7 +163,7 @@
 
 #dark-mode-toggle {
     margin-top: auto;
-    color: var(--accent-color);
+    color: var(--primary-text-color);
     display: flex;
     align-items: center;
     cursor: pointer;

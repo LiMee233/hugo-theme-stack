@@ -29,10 +29,10 @@
 
 a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(---primary-text-color);
 
     &:hover {
-        color: var(--accent-color-darker);
+        color: var(--primary-text-color-darker);
     }
 
     &.link {
@@ -53,5 +53,5 @@ a {
     display: block;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--accent-color);
+    color: var(--primary-text-color);
 }

@@ -116,7 +116,7 @@
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
-            background-color: var(--accent-color);
+            background-color: var(--primary-text-color);
         }
     }
 }
@@ -195,7 +195,7 @@
             height: 40px;
             line-height: 40px;
             display: block;
-            color: var(--accent-color);
+            color: var(--primary-text-color);
 
             svg {
                 vertical-align: -10%;
@@ -207,7 +207,7 @@
         }
 
         :hover {
-            color: var(--accent-color-darker)
+            color: var(--primary-text-color-darker)
         }
 
         &.current {
