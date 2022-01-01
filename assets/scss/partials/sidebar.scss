@@ -143,15 +143,6 @@
 .sidebar {
     .widget {
         margin-bottom: var(--section-separation);
-
-        &:not(:last-of-type):after {
-            content: "";
-            width: 100px;
-            height: 2px;
-            background-color: var(--body-text-color);
-            display: block;
-            margin-top: var(--section-separation);
-        }
     }
 }
 
