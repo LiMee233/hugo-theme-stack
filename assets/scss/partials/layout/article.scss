@@ -283,14 +283,28 @@
     }
 
     blockquote {
-        position: relative;
-        border-radius: var(--blockquote-border-radius);
-        margin: 1em 0;
+        border-radius: var(--in-article-card-border-radius);
+        margin: 1em 0px;
         border-color: var(--blockquote-border-color);
-        border-left-width: var(--blockquote-border-size);
-        border-left-style: solid;
-        padding: var(--blockquote-padding);
+        border-top-width: var(--in-article-card-border-width);
+        border-top-style: solid;
+        padding: var(--in-article-card-padding);
         background-color: var(--blockquote-background-color);
+
+        // Without this, p will have margin 17, do not know why this happened.
+        // Set p margin 0 to fix this problem.
+        p {
+            margin: 0;
+        }
+
+        &::before
+        {
+            content: "QUOTE\D\A";
+            position: relative;
+            top: -0.5em;
+            white-space: pre;
+            font-weight: bold;
+        }
     }
 
     hr {
@@ -336,16 +350,17 @@
     pre {
         overflow-x: auto;
         display: block;
+        margin: 1em 0px;
         background-color: var(--pre-background-color);
         color: var(--pre-text-color);
         font-family: var(--code-font-family);
         line-height: 1.428571429;
         word-break: break-all;
-        padding: var(--card-padding);
-        border-top-width: var(--tag-border-left-width);
+        padding: var(--in-article-card-padding);
+        border-top-width: var(--in-article-card-border-width);
         border-top-style: solid;
         border-color: var(--pre-border-color);
-        border-radius: var(--pre-border-radius);
+        border-radius: var(--in-article-card-border-radius);
 
         code {
             color: unset;
@@ -444,11 +459,11 @@
 .success,
 .danger,
 .info {
-    padding: var(--tag-padding);
-    border-top-width: var(--tag-border-left-width);
+    padding: var(--in-article-card-padding);
+    border-top-width: var(--in-article-card-border-width);
     border-top-style: solid;
     margin: 1em 0;
-    border-radius: var(--tag-border-radius);
+    border-radius: var(--in-article-card-border-radius);
 
     &:before {
         content: var(--tag-content) "\D\A";
@@ -458,32 +473,32 @@
 }
 
 .notice {
-    background-color: var(--tag-notice-background);
-    border-color: var(--tag-notice-border);
+    background-color: var(--notices-notice-background);
+    border-color: var(--notices-notice-border);
     --tag-content: "NOTICE!";
     }
 
 .important {
-    background-color: var(--tag-important-background);
-    border-color: var(--tag-important-border);
+    background-color: var(--notices-important-background);
+    border-color: var(--notices-important-border);
     --tag-content: "IMPORTANT";
     }
 
 .success {
-    background-color: var(--tag-success-background);
-    border-color: var(--tag-success-border);
+    background-color: var(--notices-success-background);
+    border-color: var(--notices-success-border);
     --tag-content: "SUCCESS!";
     }
 
 .danger {
-    background-color: var(--tag-danger-background);
-    border-color: var(--tag-danger-border);
+    background-color: var(--notices-danger-background);
+    border-color: var(--notices-danger-border);
     --tag-content: "DANGER!";
     }
 
 .info {
-    background-color: var(--tag-info-background);
-    border-color: var(--tag-info-border);
+    background-color: var(--notices-info-background);
+    border-color: var(--notices-info-border);
     --tag-content: "INFO";
     }
 

@@ -120,11 +120,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Article content style
 */
 :root {
-    --blockquote-border-size: 5px;
     --blockquote-background-color: #FEEDF3;
     --blockquote-border-color: #FAB1CE;
-    --blockquote-border-radius: 5px;
-    --blockquote-padding: 15px;
     
     --heading-border-size: 5px;
     --heading-border-radius: 5px;
@@ -144,7 +141,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --pre-border-color: #414238;
     }
 
-    --pre-border-radius: 5px;
+    --in-article-card-border-radius: 5px;
+    --in-article-card-padding: 20px;
+    --in-article-card-border-width: 5px;
 
     --code-background-color: rgba(0, 0, 0, 0.12);
     --code-text-color: #808080;
@@ -161,6 +160,21 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
         --blockquote-background-color: rgb(75 75 75);
     }
+    
+    --notices-notice-background: rgba(255,223,79,0.2);
+    --notices-notice-border: rgba(255,223,79,0.8);
+    
+    --notices-important-background: rgba(147,79,255,0.2);
+    --notices-important-border: rgba(147,79,255,0.8);
+    
+    --notices-success-background: rgba(79,255,117,0.2);
+    --notices-success-border: rgba(79,255,117,0.8);
+    
+    --notices-danger-background: rgba(255,79,79,0.2);
+    --notices-danger-border: rgba(255,79,79,0.8);
+    
+    --notices-info-background: rgba(79,173,255,0.2);
+    --notices-info-border: rgba(79,173,255,0.8);
 }
 
 /*
@@ -173,32 +187,4 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.06);
     --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.06), 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.06),
         0px 0px 1px rgba(0, 0, 0, 0.06);
-}
-
-/*
-*   For tag feature
-*/
-:root {
-    --tag-border-radius: 5px;
-    --tag-padding: 15px;
-    --tag-border-left-width: 5px;
-    
-    --tag-notice-background: rgba(255,223,79,0.2);
-    --tag-notice-border: rgba(255,223,79,0.8);
-    
-    --tag-important-background: rgba(147,79,255,0.2);
-    --tag-important-border: rgba(147,79,255,0.8);
-    
-    --tag-secondary-background: rgba(79,79,79,0.2);
-    --tag-secondary-border: rgba(79,79,79,0.8);
-    
-    --tag-success-background: rgba(79,255,117,0.2);
-    --tag-success-border: rgba(79,255,117,0.8);
-    
-    --tag-danger-background: rgba(255,79,79,0.2);
-    --tag-danger-border: rgba(255,79,79,0.8);
-    
-    --tag-info-background: rgba(79,173,255,0.2);
-    --tag-info-border: rgba(79,173,255,0.8);
-
 }
