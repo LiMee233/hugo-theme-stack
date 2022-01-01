@@ -342,6 +342,9 @@
         line-height: 1.428571429;
         word-break: break-all;
         padding: var(--card-padding);
+        border-top-width: var(--tag-border-left-width);
+        border-top-style: solid;
+        border-color: var(--pre-border-color);
         border-radius: var(--pre-border-radius);
 
         code {
@@ -353,11 +356,13 @@
 
         &::before
         {
-            content: "CODE";
-            display: block;
-            margin: -0.5em 0 0.5em 0;
+            content: "CODE\D\A";
+            position: relative;
+            top: -0.5em;
+            font-size: 1.1em;
+            white-space: pre;
             font-weight: bold;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.1em;
         }
     }
 

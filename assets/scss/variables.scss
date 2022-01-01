@@ -135,11 +135,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     &[data-scheme="light"] {
         --pre-text-color: #272822;
         --pre-background-color: #fafafa;
+        --pre-border-color: #e0e0e0;
     }
     
     &[data-scheme="dark"] {
         --pre-text-color: #f8f8f2;
         --pre-background-color: #272822;
+        --pre-border-color: #414238;
     }
 
     --pre-border-radius: 5px;
