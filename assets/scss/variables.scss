@@ -130,22 +130,22 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --link-background-opacity: 0.5;
 
     &[data-scheme="light"] {
-        --pre-text-color: #272822;
-        --pre-background-color: #fafafa;
-        --pre-border-color: #e0e0e0;
+        --pre-text-color: #282C34;
+        --pre-background-color: rgba(0, 0, 0, 0.02);
+        --pre-border-color: rgba(0, 0, 0, 0.2);
     }
     
     &[data-scheme="dark"] {
         --pre-text-color: #f8f8f2;
-        --pre-background-color: #272822;
-        --pre-border-color: #414238;
+        --pre-background-color: rgba(0, 0, 0, 0.2);
+        --pre-border-color: rgba(0, 0, 0, 0.2);
     }
 
     --in-article-card-border-radius: 5px;
     --in-article-card-padding: 20px;
     --in-article-card-border-width: 5px;
 
-    --code-background-color: rgba(0, 0, 0, 0.12);
+    --code-background-color: rgba(0, 0, 0, 0.1);
     --code-text-color: #808080;
 
     --table-border-color: #dadada;
