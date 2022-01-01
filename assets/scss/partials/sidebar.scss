@@ -11,7 +11,7 @@
     flex-direction: row;
     flex-shrink: 0;
     align-self: stretch;
-    padding: var(--main-top-padding) 20px 0px 0px;
+    padding: var(--main-top-padding) 0px 0px 0px;
     width: 100%;
 
     max-width: none;
@@ -22,7 +22,7 @@
     @include respond(md) {
         width: auto;
         max-height: 100vh;
-        padding: var(--main-top-padding) 20px var(--main-top-padding) 30px;
+        padding: var(--main-top-padding) 0px var(--main-top-padding) 25px;
         --sidebar-avatar-size: 120px;
         --sidebar-element-separation: 20px;
         flex-direction: column;
