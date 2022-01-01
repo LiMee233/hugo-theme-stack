@@ -433,52 +433,53 @@
     }
 }
 
-.warning,
-.primary,
-.secondary,
+// Add tag feature
+.notice,
+.important,
 .success,
 .danger,
 .info {
     padding: var(--tag-padding);
-    border-left-width: var(--tag-border-left-width);
-    border-left-style: solid;
+    border-top-width: var(--tag-border-left-width);
+    border-top-style: solid;
     margin: 1em 0;
     border-radius: var(--tag-border-radius);
 
-    &:first-line {
+    &:before {
+        content: var(--tag-content) "\D\A";
+        white-space: pre;
         font-weight: bold;
     }
 }
 
-// Add tag feature
-.warning {
-    background-color: var(--tag-warning-background);
-    border-color: var(--tag-warning-border);
+.notice {
+    background-color: var(--tag-notice-background);
+    border-color: var(--tag-notice-border);
+    --tag-content: "NOTICE!";
     }
 
-.primary {
-    background-color: var(--tag-primary-background);
-    border-color: var(--tag-primary-border);
-    }
-
-.secondary {
-    background-color: var(--tag-secondary-background);
-    border-color: var(--tag-secondary-border);
+.important {
+    background-color: var(--tag-important-background);
+    border-color: var(--tag-important-border);
+    --tag-content: "IMPORTANT";
     }
 
 .success {
     background-color: var(--tag-success-background);
     border-color: var(--tag-success-border);
+    --tag-content: "SUCCESS!";
     }
 
 .danger {
     background-color: var(--tag-danger-background);
     border-color: var(--tag-danger-border);
+    --tag-content: "DANGER!";
     }
 
 .info {
     background-color: var(--tag-info-background);
     border-color: var(--tag-info-border);
+    --tag-content: "INFO";
     }
 
 // set word-break for code.
