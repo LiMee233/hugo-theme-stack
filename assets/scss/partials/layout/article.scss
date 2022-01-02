@@ -259,14 +259,14 @@
     h6 {
         width: fit-content;
         &:before {
-            content: "『";
+            content: "「";
             display: inline;
             padding-right: 0.3em;
             color: var(--accent-color);
         }
 
         &:after {
-            content: "』";
+            content: "」";
             display: inline;
             padding-left: 0.3em;
             color: var(--accent-color);
